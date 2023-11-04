@@ -1,0 +1,540 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-image: url("Rolls\ Royce.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 95vw;
+    margin: auto;
+}
+
+.img-1 {
+    height: 96px;
+    width: 91px;
+}
+
+.nav-item {
+    color: #fff;
+    list-style: none;
+    display: flex;
+    height: 10vh;
+    width: 38vw;
+    padding: 10px 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item li {
+    font-size: 21px;
+}
+
+.nav-item li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.search-symbol {
+    color: #ffff;
+    font-size: 28px;
+}
+
+.search-symbol:hover {
+    cursor: pointer;
+}
+
+.detail {
+    height: 62vh;
+    width: 49vw;
+    margin-left: 85px;
+    padding: 10px;
+    color: #fffF;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.detail h1 span {
+    color: yellow;
+}
+
+.experience {
+    font-size: 3rem;
+}
+
+.detail h3 {
+    font-size: 1.5rem;
+    color: #e9dddd;
+}
+
+.buttons button {
+    background-color: yellow;
+    border: none;
+    width: 12vw;
+    padding: 15px 10px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.buttons button:hover {
+    cursor: pointer;
+}
+
+.buttons a {
+    color: #e9dddd;
+    text-decoration: 1px underline #e9dddd;
+    font-size: 20px;
+    padding: 10px 5px;
+    margin-left: 25px;
+}
+
+.scrollbar {
+    height: 60vh;
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.imgcontainer {
+    display: flex;
+    overflow: scroll;
+    height: 100%;
+    width: 615px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.imgcontainer::-webkit-scrollbar {
+    display: none;
+}
+
+.section {
+    margin-top: 150px;
+    width: 96vw;
+    height: 1300px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #ffff;
+}
+
+.section h2 span {
+    color: yellow;
+}
+
+.section h3 {
+    font-size: 1.5rem;
+    color: #e9dddd;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 60vw;
+    height: 900px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box1 {
+    display: flex;
+    flex-flow: column wrap;
+    height: 58vh;
+    width: 15vw;
+    padding: 10px;
+    background-color: black;
+    justify-content: space-evenly;
+    border: 1px solid grey;
+    border-radius: 7px;
+}
+
+.model {
+    color: #e9dddd;
+}
+
+.book {
+    background-color: black;
+    color: #e9dddd;
+    padding: 10px 6px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.book:hover {
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+}
+
+.service {
+    height: 45vh;
+    padding: 10px;
+    width: 70vw;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.serhh2 {
+    font-size: 25px;
+}
+
+.serhh3 {
+    font-size: 20px;
+}
+
+.service-1 {
+    background-color: #fdee19;
+    width: 18vw;
+    height: 35vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 1s linear;
+}
+
+.service-1:hover {
+    transform: scale(1.1);
+    box-shadow: 7px 5px 15px 0px #1619b7;
+    cursor: pointer;
+}
+
+.serh3 {
+    font-size: 23px;
+}
+
+.sera {
+    font-size: 19px;
+    color: black;
+}
+
+.login {
+    height: 68vh;
+    width: 68vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.form {
+    display: flex;
+    flex-flow: column wrap;
+    width: 30vw;
+    height: 65vh;
+    padding: 5px 10px;
+}
+
+.form-1 {
+    padding: 10px;
+}
+
+.login-info {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    width: 30vw;
+    height: 40vh;
+    padding: 10px;
+}
+
+#name {
+    background-color: black;
+    height: 30px;
+    width: 260px;
+    color: #e9dddd;
+    border-bottom: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#email {
+    background-color: black;
+    height: 30px;
+    width: 260px;
+    color: #e9dddd;
+    border-bottom: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.sub {
+    background-color: #fdee19;
+    border: none;
+    width: 260px;
+    border-radius: 10px;
+    padding: 10px 5px;
+    font-size: 15px;
+    box-shadow: 0px 4px 20px 1px blue;
+}
+
+.sub:hover {
+    cursor: pointer;
+    background-color: #e0d644;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    padding: 10px;
+    width: 96vw;
+    height: 60vh;
+    border-bottom: 1px solid grey;
+}
+
+.first {
+    display: flex;
+    flex-flow: column wrap;
+    width: 20vw;
+    height: 40vh;
+    padding: 5px 10px;
+    justify-content: space-around;
+}
+
+.img-2 {
+    height: 105px;
+    width: 91px;
+}
+
+.first h3 {
+    font-size: 16px;
+    color: #e9dddd;
+}
+
+.nav-item-footer {
+    color: #e9dddd;
+    list-style: none;
+    display: flex;
+    height: 37vh;
+    width: 15vw;
+    padding: 10px 5px;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.second {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+}
+
+footer {
+    padding-bottom: 15px;
+}
+
+footer .nav-item-footer li:hover {
+    cursor: pointer;
+    text-decoration: 2px underline grey;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+}
+
+.icons i {
+    font-size: 30px;
+    background-color: black;
+    color: #ffff;
+    padding: 5px;
+}
+
+.icons i:hover {
+    color: hsl(56, 100%, 57%);
+    cursor: pointer;
+}
+
+.foot-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.Copyright {
+    font-size: 18px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: #e9dddd;
+    text-align: center;
+    margin: 20px;
+}
+
+/*For iphone se mobile */
+@media (width:375px) and (height:667px) {
+    body {
+        align-items: flex-start;
+    }
+
+    .navbar {
+        flex-flow: column wrap;
+        height: 60vh;
+        justify-content: space-evenly;
+        padding: 10px 0px;
+        align-items: flex-start;
+    }
+
+    .nav-item {
+        flex-flow: column wrap;
+        height: 25vh;
+        width: 30vw;
+        align-items: flex-start;
+    }
+
+    .navbar img {
+        margin-left: -14px;
+    }
+
+    .detail {
+        height: 125vh;
+        width: 66vw;
+        margin-left: 0;
+    }
+
+    .experience {
+        font-size: 25px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-flow: column wrap;
+        height: 30vh;
+        justify-content: space-around;
+    }
+
+    .buttons button {
+        width: 40vw;
+    }
+
+    .buttons a {
+        margin-left: 0;
+    }
+
+    .scrollbar {
+        display: none;
+    }
+
+    .section {
+        margin-top: 10px;
+        height: 3100px;
+        align-items: flex-start;
+        width: 90vw;
+        padding-left: 5px;
+    }
+
+    .section h2 {
+        font-size: 25px;
+    }
+
+    .section h3 {
+        font-size: 18px;
+    }
+
+    .container {
+        height: 2600px;
+        width: 90vw;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    .box1 {
+        width: 65vw;
+    }
+
+    .service {
+        flex-flow: column wrap;
+        height: 115vh;
+        align-items: flex-start;
+    }
+
+    .service-1 {
+        width: 55vw;
+        height: 30vh;
+    }
+
+    .login {
+        height: 105vh;
+        flex-flow: column wrap;
+    }
+
+    .login img {
+        height: 185px;
+        width: 250px;
+    }
+
+    .form {
+        height: 70vh;
+        width: 62vw;
+    }
+
+    #name {
+        height: 30px;
+        width: 210px;
+    }
+
+    #email {
+        height: 30px;
+        width: 210px;
+    }
+
+    .sub {
+        width: 210px;
+    }
+
+    .footer {
+        height: 200vh;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(4, auto);
+        width: 87vw;
+    }
+
+    .first {
+        flex-flow: column wrap;
+        width: 50vw;
+        height: 45vh;
+    }
+
+    .foot-nav {
+        flex-flow: column wrap;
+        align-items: flex-start;
+        height: 25vh;
+        width: 87vw;
+    }
+    .Copyright{
+        text-align: left;
+    }
+}
