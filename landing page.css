@@ -393,34 +393,51 @@ footer .nav-item-footer li:hover {
     margin: 20px;
 }
 
-/*For iphone se mobile */
-@media (width:375px) and (height:667px) {
+@media (max-width:768px){
+
+    header{
+        width: 100vw;
+    }
+
     body {
         align-items: flex-start;
     }
 
     .navbar {
-        flex-flow: column wrap;
-        height: 60vh;
-        justify-content: space-evenly;
-        padding: 10px 0px;
-        align-items: flex-start;
+        margin-left: 0px;
+        height: 530px;
+        width: 97vw;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+    }
+
+    .nav-item li{
+        font-size: 25px;
     }
 
     .nav-item {
-        flex-flow: column wrap;
-        height: 25vh;
-        width: 30vw;
-        align-items: flex-start;
+    height: 240px;
+    align-items: start;
+    width: 95%;
+    text-align: start;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+    .search-symbol{
+        font-size: 30px;
     }
 
     .navbar img {
+        height: 110px;
+        width: 108px;
         margin-left: -14px;
     }
 
     .detail {
-        height: 125vh;
-        width: 66vw;
+        height: 580px;
+        width: 92vw;
         margin-left: 0;
     }
 
@@ -436,11 +453,14 @@ footer .nav-item-footer li:hover {
     }
 
     .buttons button {
-        width: 40vw;
+        width: 202px;
+    height: 82px;
+        font-size: 22px;
     }
 
     .buttons a {
         margin-left: 0;
+        font-size: 22px;
     }
 
     .scrollbar {
@@ -464,7 +484,7 @@ footer .nav-item-footer li:hover {
     }
 
     .container {
-        height: 2600px;
+        height: 2650px;
         width: 90vw;
         flex-flow: column wrap;
         align-items: flex-start;
@@ -472,7 +492,8 @@ footer .nav-item-footer li:hover {
     }
 
     .box1 {
-        width: 65vw;
+        width: 300px;
+        height: 385px;
     }
 
     .service {
@@ -487,32 +508,48 @@ footer .nav-item-footer li:hover {
     }
 
     .login {
-        height: 105vh;
-        flex-flow: column wrap;
+        height: 728px;
+        width: 97vw;
+    flex-flow: column wrap;
+    align-items: center;
     }
 
     .login img {
-        height: 185px;
-        width: 250px;
+        height: 228px ;
+        width: 91%;
     }
 
     .form {
-        height: 70vh;
-        width: 62vw;
+        height: 482px;
+        width: 100%;
+        align-items: center;
+    }
+
+    form-1 span{
+        font-size: 18px;
+    }
+
+    .login-info{
+        width: 300px;
+    height: 300px;
     }
 
     #name {
-        height: 30px;
-        width: 210px;
+        height: 55px;
+    width: 290px;
+    font-size: 18px;
     }
 
     #email {
-        height: 30px;
-        width: 210px;
+        height: 55px;
+    width: 290px;
+    font-size: 18px;
     }
 
     .sub {
-        width: 210px;
+        width: 300px;
+    height: 55px;
+    font-size: 19px;
     }
 
     .footer {
@@ -536,5 +573,60 @@ footer .nav-item-footer li:hover {
     }
     .Copyright{
         text-align: left;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1280px){
+    .detail{
+        margin-left: 0;
+    }
+
+    .buttons button{
+        width: 180px;
+        padding: 22px 15px;
+        font-size: 19px;
+    }
+
+    .buttons a{
+        font-size: 22px;
+    }
+
+    .scrollbar{
+        height: 400px;
+    width: 700px;
+    }
+
+    .section h3{
+        text-align: center;
+        font-size: 24px;
+    }
+
+
+    .container{
+        height: auto;
+        gap: 15px;
+        width: 98vw;
+    }
+
+    .box1{
+        width: 269px;
+        height: 360px;
+    }
+
+    .service{
+    width: 94vw;
+    height: 450px;
+    }
+
+    .service-1{
+        width: 250px;
+        height: 280px;
+        font-size: 20px;
+    }
+
+    .login{
+    height: 450px;
+    width: 97vw;
+    align-items: center;
     }
 }
