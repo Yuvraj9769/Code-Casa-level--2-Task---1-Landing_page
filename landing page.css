@@ -436,7 +436,8 @@ footer .nav-item-footer li:hover {
     }
 
     .detail {
-        height: 580px;
+        min-height: 580px;
+        flex-wrap: nowrap;
         width: 92vw;
         margin-left: 0;
     }
@@ -469,7 +470,7 @@ footer .nav-item-footer li:hover {
 
     .section {
         margin-top: 10px;
-        height: 3100px;
+        height: auto;
         align-items: flex-start;
         width: 90vw;
         padding-left: 5px;
@@ -516,7 +517,7 @@ footer .nav-item-footer li:hover {
 
     .login img {
         height: 228px ;
-        width: 91%;
+        width: 350px;
     }
 
     .form {
@@ -553,7 +554,7 @@ footer .nav-item-footer li:hover {
     }
 
     .footer {
-        height: 200vh;
+        height: auto;
         grid-template-columns: repeat(1, auto);
         grid-template-rows: repeat(4, auto);
         width: 87vw;
@@ -596,6 +597,10 @@ footer .nav-item-footer li:hover {
     width: 700px;
     }
 
+    .section{
+        height: auto;
+    }
+
     .section h3{
         text-align: center;
         font-size: 24px;
@@ -614,19 +619,66 @@ footer .nav-item-footer li:hover {
     }
 
     .service{
+        gap: 15px;
     width: 94vw;
     height: 450px;
     }
 
     .service-1{
-        width: 250px;
-        height: 280px;
+        
+        width: auto;
+        height: auto;
         font-size: 20px;
     }
 
     .login{
-    height: 450px;
+    height: auto;
     width: 97vw;
     align-items: center;
+    }
+
+    .form{
+        height: auto;
+        width: 35vw;
+    }
+
+    .footer{
+        height: auto;
+    }
+
+    .first{
+        flex-flow: row wrap;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1281px){
+    .first{
+        flex-flow: row nowrap;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .buttons{
+        width: auto;
+    }
+
+    .service{
+        height: auto;
+        gap: 15px;
+    }
+
+    .service-1{
+        height: auto;
+    }
+    .buttons button {
+        width: auto;
+    }
+    .container{
+        width: 100vw;
+    }
+
+    .foot-nav{
+        height: auto;
     }
 }
